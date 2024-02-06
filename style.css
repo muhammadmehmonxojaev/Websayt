@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 70px 0;
+}
+
+.main img {
+    width: 575px;
+    height: 420px;
+    border-radius: 5px;
+}
+
+.main h2{
+    font-family: Ubuntu;
+    font-size: 32px;
+}
+
+.main p {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    color: #787A80;
+}
+
+.main button {
+    color: #FF5A30;
+    font-family: ubuntu;
+    font-weight: 700;
+    font-size: 14px;
+    width: 160px;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid #FF5A30;
+    padding: 0 32px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.main button:hover {
+    background-color: #FF5A30;
+    color: #fff;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main img {
+        width: 400px;
+        height: 300px;
+    }
+    .main h2{
+        font-size: 24px;
+    }
+    .main p{
+        font-size: 14px;
+    }
+    .main button {
+        width: 135px;
+        height: 35px;
+        font-size: 12px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main img {
+        width: 500px;
+        padding-top: 30px;
+    }
+}
+
+@media screen  and (max-width600px){
+    .main img{
+        width: 400px;   
+    }
+    
+    .main p {
+        font-size: 12px;
+    }
+
+    .main h2{
+        font-size: 20px;
+    }
+    
+}
